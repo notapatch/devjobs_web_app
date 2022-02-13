@@ -1,3 +1,17 @@
+:root {
+  /* Primary */
+  --color-violet-100: hsl(235, 82%, 77%);
+  --color-violet-300: hsl(27, 22%, 51%);
+  --color-violet-400: hsl(219, 20%, 14%);
+  --color-violet-500: hsl(220, 29%, 10%);
+
+  /* Secondary */
+  --color-secondary-gray-100: hsl(210, 22%, 96%);
+  --color-secondary-gray-200: hsl(212, 23%, 69%);
+  --color-secondary-gray-300: hsl(214, 17%, 51%);
+  --color-secondary-gray-400: hsl(222, 5%, 57%);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
