@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'pattern-header': "url('mobile/bg-pattern-header.svg')",
+      },
       colors: {
         'secondary-gray': {
          100: 'var(--color-secondary-gray-100)',
