@@ -17,10 +17,34 @@
   </head>
 
   <body>
-    <header>
-      <div class="w-8 h-8">
+    <header class="h-36 bg-violet-200 bg-pattern-header">
+      <div class="mx-6 pt-8 mb-8 flex items-center justify-between">
         <%= show_svg("desktop/logo.svg") %>
         <%= render(UserLoginComponent.new(current_user: current_user, user_signed_in: user_signed_in?)) %>
+      </div>
+      <div>
+        <label for="search" class="sr-only block text-sm font-medium text-gray-700">Search</label>
+        <div class="mt-1 relative flex items-center mx-6">
+          <input type="text"
+                 name="search"
+                 id="search"
+                 placeholder="Filter by title"
+                 class="h-20 pl-6 placeholder:text-secondary-gray-400 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full pr-12 sm:text-sm border-gray-300 rounded-md">
+          <div class="absolute inset-y-0 right-0 flex py-1.5 pr-1.5 mr-4 items-center">
+
+            <div class="inline-flex justify-center items-center rounded w-12 h-12 text-sm font-sans font-medium text-gray-400">
+              <div class="w-5 h-5">
+                <%= show_svg("mobile/icon-filter.svg") %>
+              </div>
+            </div>
+
+            <div class="inline-flex justify-center items-center border bg-violet-200 border-green-700 rounded w-12 h-12 text-sm font-sans font-medium text-gray-400">
+              <div class="w-5 h-5 text-white">
+                <%= show_svg("desktop/icon-search.svg") %>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <%= yield %>
