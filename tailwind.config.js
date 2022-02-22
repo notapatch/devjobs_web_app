@@ -17,6 +17,7 @@ module.exports = {
         },
         'violet': {
           100: 'var(--color-violet-100)',
+          200: 'var(--color-violet-200)',
           300: 'var(--color-violet-300)',
           400: 'var(--color-violet-400)',
           500: 'var(--color-violet-500)',

@@ -1,6 +1,7 @@
 :root {
   /* Primary */
   --color-violet-100: hsl(235, 82%, 77%);
+  --color-violet-200: hsl(235, 69%, 61%);
   --color-violet-300: hsl(228, 67%, 58%);
   --color-violet-400: hsl(219, 20%, 14%);
   --color-violet-500: hsl(220, 29%, 10%);
