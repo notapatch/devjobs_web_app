@@ -32,5 +32,8 @@ module.exports = {
         sans: ['Kumbh Sans', ...defaultTheme.fontFamily.sans]
       }
     }
-  }
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ]
 }
