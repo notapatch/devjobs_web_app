@@ -19,6 +19,7 @@
   <body>
     <header>
       <div class="w-8 h-8">
+        <%= show_svg("desktop/logo.svg") %>
         <%= render(UserLoginComponent.new(current_user: current_user, user_signed_in: user_signed_in?)) %>
       </div>
     </header>
